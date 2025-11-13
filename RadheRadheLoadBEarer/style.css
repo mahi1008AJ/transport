@@ -1,0 +1,129 @@
+:root {
+  --bg: #f7f9fb;
+  --text: #0b1220;
+  --muted: #6b7280;
+  --accent-orange: #ff6b00;
+  --accent-green: #0fa678;
+  --card: #ffffff;
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(11, 17, 32, 0.06);
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* header */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow);
+  z-index: 100;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+}
+.nav a:hover {
+  color: var(--accent-orange);
+}
+.nav-toggle {
+  display: none;
+}
+
+/* hero */
+.hero {
+  padding: 60px 0;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 40px;
+}
+.lead {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+/* buttons */
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn.primary {
+  background: linear-gradient(90deg, var(--accent-orange), #ff8b3a);
+  color: white;
+}
+.btn.ghost {
+  border: 2px solid #ddd;
+  color: var(--text);
+}
+
+/* sections */
+.section {
+  padding: 50px 0;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* footer */
+.site-footer {
+  background: #fff;
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.center {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+/* responsive */
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+}

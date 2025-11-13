@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Gallery — LOAD BEARER</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAVBAR HEADER with ORANGE background -->
+<header class="site-header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container" style="background: #ff6b00; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 0;">
+      <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #fff; font-size: 18px; padding: 12px 20px;">
+        <img src="assets/logo.svg" alt="Logo" style="width: 40px; height: 40px;">
+        <span>LOAD BEARER</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(255,255,255,0.5);">
+        <span class="navbar-toggler-icon" style="background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e\"); background-repeat: no-repeat; background-position: center; background-size: 1.5rem 1.5rem;"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Fleet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tracking.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Track</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #ff6b00; font-weight: 700; padding: 8px 16px; background: #fff; border-radius: 6px; margin-left: 8px;">
+              <i class="fa fa-user" aria-hidden="true"></i> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTACT INFO SECTION BELOW NAV -->
+<div class="contact_nav" style="gap: 18px; display: flex; justify-content: space-between; align-items: center; background: #04233b; color: #fff; padding: 8px 32px; flex-wrap: wrap;">
+  <div style="flex:1; display: flex; justify-content: flex-start; min-width: 250px;">
+    <a href="tel:+919492989008" style="display: flex; align-items: center; gap: 8px; color: #fff; text-decoration: none;">
+      <span style="display: flex; justify-content: center; align-items: center; width: 28px; height: 28px; background: #00bcd4; border-radius: 50%; color: #fff; font-size: 14px;"><i class="fa fa-phone" aria-hidden="true"></i></span>
+      <span style="font-size: 13px;">Call: +91 94929 89008</span>
+    </a>
+  </div>
+  <div style="flex:1; display: flex; justify-content: center; min-width: 250px;">
+    <a href="mailto:loadbearer108@gmail.com" style="display: flex; align-items: center; gap: 8px; color: #fff; text-decoration: none;">
+      <span style="display: flex; justify-content: center; align-items: center; width: 28px; height: 28px; background: #00bcd4; border-radius: 50%; color: #fff; font-size: 14px;"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+      <span style="font-size: 13px;">Email: loadbearer108@gmail.com</span>
+    </a>
+  </div>
+  <div style="flex:1; display: flex; justify-content: flex-end; min-width: 250px;">
+    <a href="#" style="display: flex; align-items: center; gap: 8px; color: #fff; text-decoration: none;">
+      <span style="display: flex; justify-content: center; align-items: center; width: 28px; height: 28px; background: #00bcd4; border-radius: 50%; color: #fff; font-size: 14px;"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+      <span style="font-size: 13px;">Hyderabad, Telangana</span>
+    </a>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <h1>Fleet Gallery</h1>
+    <p class="muted">Our Modern Fleet — Maintained to the Highest Standards</p>
+    
+    <div class="gallery-grid" style="margin-top: 32px;">
+      <img src="https://via.placeholder.com/480x320?text=Truck+Fleet" alt="Fleet of Trucks" style="width:100%; border-radius: var(--radius); object-fit: cover;">
+      <img src="https://via.placeholder.com/480x320?text=Heavy+Cargo" alt="Heavy Cargo Transport" style="width:100%; border-radius: var(--radius); object-fit: cover;">
+      <img src="https://via.placeholder.com/480x320?text=Warehouse" alt="Modern Warehouse Facility" style="width:100%; border-radius: var(--radius); object-fit: cover;">
+      <img src="https://via.placeholder.com/480x320?text=Loading+Dock" alt="Loading Operations" style="width:100%; border-radius: var(--radius); object-fit: cover;">
+    </div>
+
+    <div style="background: var(--card); padding: 24px; border-radius: var(--radius); margin-top: 32px; box-shadow: var(--shadow);">
+      <h2>Our Fleet Capabilities</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 15px; line-height: 1.8;">
+        <div>
+          <h3>🚛 Vehicle Types</h3>
+          <ul style="margin: 0;">
+            <li>Truck trailers (4-40 tons)</li>
+            <li>Tipper trucks</li>
+            <li>Flatbed carriers</li>
+            <li>Container transport</li>
+          </ul>
+        </div>
+        <div>
+          <h3>⚙️ Fleet Features</h3>
+          <ul style="margin: 0;">
+            <li>GPS tracking on all vehicles</li>
+            <li>Regular maintenance schedule</li>
+            <li>Climate-controlled options</li>
+            <li>Certified & insured</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="center" style="margin-top: 32px;">
+      <a href="contact.html" class="btn primary">Book a Truck Today</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h4>LOAD BEARER</h4><p class="muted">Trusted Logistics Partner</p></div>
+    <div><h4>Contact</h4><p class="muted">Phone: +91 94929 89008<br>Email: loadbearer108@gmail.com</p></div>
+    <div><h4>Follow</h4><p class="muted">LinkedIn / Facebook / Twitter</p></div>
+  </div>
+  <div class="center muted">&copy; LOAD BEARER <span id="year"></span>. All rights reserved.</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

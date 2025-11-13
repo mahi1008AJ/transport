@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Quote — LOAD BEARER</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAVBAR HEADER with ORANGE background -->
+<header class="site-header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container" style="background: #ff6b00; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 0;">
+      <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #fff; font-size: 18px; padding: 12px 20px;">
+        <img src="assets/logo.svg" alt="Logo" style="width: 40px; height: 40px;">
+        <span>LOAD BEARER</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(255,255,255,0.5);">
+        <span class="navbar-toggler-icon" style="background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e\"); background-repeat: no-repeat; background-position: center; background-size: 1.5rem 1.5rem;"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Fleet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tracking.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Track</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: #fff; font-weight: 600; padding: 12px 16px;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #ff6b00; font-weight: 700; padding: 8px 16px; background: #fff; border-radius: 6px; margin-left: 8px;">
+              <i class="fa fa-user" aria-hidden="true"></i> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTACT INFO SECTION BELOW NAV -->
+<div class="contact_nav" style="gap: 18px; display: flex; justify-content: space-between; align-items: center; background: #04233b; color: #fff; padding: 8px 32px; flex-wrap: wrap;">
+  <div style="flex:1; display: flex; justify-content: flex-start; min-width: 250px;">
+    <a href="tel:+919492989008" style="display: flex; align-items: center; gap: 8px; color: #fff; text-decoration: none;">
+      <span style="display: flex; justify-content: center; align-items: center; width: 28px; height: 28px; background: #00bcd4; border-radius: 50%; color: #fff; font-size: 14px;"><i class="fa fa-phone" aria-hidden="true"></i></span>
+      <span style="font-size: 13px;">Call: +91 94929 89008</span>
+    </a>
+  </div>
+  <div style="flex:1; display: flex; justify-content: center; min-width: 250px;">
+    <a href="mailto:loadbearer108@gmail.com" style="display: flex; align-items: center; gap: 8px; color: #fff; text-decoration: none;">
+      <span style="display: flex; justify-content: center; align-items: center; width: 28px; height: 28px; background: #00bcd4; border-radius: 50%; color: #fff; font-size: 14px;"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+      <span style="font-size: 13px;">Email: loadbearer108@gmail.com</span>
+    </a>
+  </div>
+  <div style="flex:1; display: flex; justify-content: flex-end; min-width: 250px;">
+    <a href="#" style="display: flex; align-items: center; gap: 8px; color: #fff; text-decoration: none;">
+      <span style="display: flex; justify-content: center; align-items: center; width: 28px; height: 28px; background: #00bcd4; border-radius: 50%; color: #fff; font-size: 14px;"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+      <span style="font-size: 13px;">Hyderabad, Telangana</span>
+    </a>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <h1>Contact & Get a Quote</h1>
+    <p class="muted">Reach out to us for a customized transport solution</p>
+    
+    <div class="form-grid" style="margin-top: 32px;">
+      <form id="contactForm" class="form card">
+        <h3>Send us a Message</h3>
+        
+        <label for="name">Full Name *</label>
+        <input 
+          id="name" 
+          name="name" 
+          type="text"
+          placeholder="Your name"
+          required
+          style="padding: 10px;">
+        
+        <label for="company">Company Name</label>
+        <input 
+          id="company" 
+          name="company" 
+          type="text"
+          placeholder="Your company">
+        
+        <label for="email">Email Address *</label>
+        <input 
+          id="email" 
+          name="email" 
+          type="email"
+          placeholder="your@email.com"
+          required
+          style="padding: 10px;">
+        
+        <label for="phone">Phone Number</label>
+        <input 
+          id="phone" 
+          name="phone" 
+          type="tel"
+          placeholder="+91 XXXXX XXXXX">
+        
+        <label for="service">Service Needed</label>
+        <select id="service" name="service" style="padding: 10px; border-radius: 8px; border: 1px solid #ddd;">
+          <option value="">Select a service</option>
+          <option value="freight">Freight Transport</option>
+          <option value="warehousing">Warehousing & Storage</option>
+          <option value="parcel">Parcel Delivery</option>
+          <option value="steel">Steel Material Logistics</option>
+          <option value="custom">Custom Solutions</option>
+        </select>
+        
+        <label for="message">Message *</label>
+        <textarea 
+          id="message" 
+          name="message" 
+          placeholder="Tell us about your shipment requirements..."
+          rows="5"
+          style="padding: 10px; border-radius: 8px; border: 1px solid #ddd; font-family: inherit; resize: vertical;"
+          required></textarea>
+        
+        <button class="btn primary" type="submit" style="width: 100%; margin-top: 12px; padding: 12px;">Send Message</button>
+      </form>
+
+      <aside class="card contact-side">
+        <h3>Contact Information</h3>
+        
+        <div style="margin-bottom: 20px;">
+          <h4 style="margin: 0 0 8px 0; color: var(--accent-orange);">📞 Phone</h4>
+          <p style="margin: 0; font-size: 16px;"><a href="tel:+919492989008" style="color: var(--accent-orange); text-decoration: none; font-weight: 600;">+91 94929 89008</a></p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <h4 style="margin: 0 0 8px 0; color: var(--accent-orange);">📧 Email</h4>
+          <p style="margin: 0; font-size: 16px;"><a href="mailto:loadbearer108@gmail.com" style="color: var(--accent-orange); text-decoration: none; font-weight: 600;">loadbearer108@gmail.com</a></p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <h4 style="margin: 0 0 8px 0; color: var(--accent-orange);">📍 Address</h4>
+          <p style="margin: 0; line-height: 1.6; font-size: 14px;">
+            Viswakarma Colony, Suraram Village<br>
+            Hyderabad, Telangana — 500043<br>
+            India
+          </p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <h4 style="margin: 0 0 8px 0; color: var(--accent-orange);">⏰ Operating Hours</h4>
+          <p style="margin: 0; font-size: 14px;">
+            Monday - Friday: 9:00 AM - 6:00 PM<br>
+            Saturday: 9:00 AM - 2:00 PM<br>
+            Sunday & Holidays: Closed
+          </p>
+        </div>
+
+        <div style="background: linear-gradient(135deg, var(--accent-orange), #ff8b3a); padding: 16px; border-radius: 8px; color: white; margin-top: 24px;">
+          <h4 style="margin: 0 0 8px 0;">Quick Response</h4>
+          <p style="margin: 0; font-size: 14px;">Get a quote within 24 hours. Our team is ready to help!</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h4>LOAD BEARER</h4><p class="muted">We Move Your Business Forward</p></div>
+    <div><h4>Quick Links</h4><p class="muted"><a href="index.html" style="color: var(--accent-orange); text-decoration: none;">Home</a> • <a href="services.html" style="color: var(--accent-orange); text-decoration: none;">Services</a> • <a href="tracking.html" style="color: var(--accent-orange); text-decoration: none;">Track</a></p></div>
+    <div><h4>Follow</h4><p class="muted">LinkedIn / Facebook / Twitter</p></div>
+  </div>
+  <div class="center muted">&copy; LOAD BEARER <span id="year"></span>. All rights reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
